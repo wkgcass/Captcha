@@ -1,3 +1,5 @@
+import net.cassite.captcha.CaptchaGen;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -14,7 +16,7 @@ public class CaptchaGenRun {
                 // 大小150*50, 4个字, 50个噪音 (常见配置)
                 CaptchaGen bar = CaptchaGen.DEFAULT;
                 BufferedImage img =
-                        bar.generate(sb);
+                        foo.generate(sb);
                 //foo.generate(sb);
                 System.out.println(sb);
                 File file = new File("/Volumes/PROJECTS/openSource/Captcha/src/test/resources/file.png");

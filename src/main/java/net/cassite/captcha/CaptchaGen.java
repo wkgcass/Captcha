@@ -1,8 +1,10 @@
+package net.cassite.captcha;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
 /**
- * Created by wkgcass on 16/4/3.
+ * Captcha Generator.
  */
 public class CaptchaGen {
         public static final String ALL_ENGLISH_CHARS_AND_NUMBERS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -22,6 +24,9 @@ public class CaptchaGen {
         private final int nSize;
 
         /**
+         * construct the Captcha Generator.
+         *
+         * @param str   select char from the string 从这串字符串中选择字符
          * @param x     captcha X size 验证码X大小
          * @param y     captcha Y size 验证码Y大小
          * @param size  character pen size 文字笔画大小
@@ -48,7 +53,7 @@ public class CaptchaGen {
         }
 
         /**
-         * generate
+         * generate captcha.
          *
          * @param sb records the captcha 记录验证码
          * @return generated buffered image 生成的图片
